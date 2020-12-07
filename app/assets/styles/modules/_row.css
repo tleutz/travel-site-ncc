@@ -1,0 +1,43 @@
+.row {
+
+    @mixin clearfix;
+
+    /* This pushes the margin of row div 65px to the right. Then wrapper class we overflow: hidden*/
+    &--gutters {
+        margin-right: -65px;
+    }
+
+    /* Select all direct children divs of row--gutters*/
+    &--gutters > div {
+        padding-right: 65px;
+    }
+
+    &__b-margin-until-medium{
+        margin-bottom: 1rem;
+    }
+
+    /* To determine column width 100/12=8.33 then how many widths do want example 8.33x4=33.3%*/
+    @mixin atMedium {
+        &__b-margin-until-medium{
+            margin-bottom: 1rem;
+        }
+
+        &__medium-4 {
+            float: left;
+            width: 33.3%;
+        }
+
+        &__medium-4--larger {
+            width: 37%;
+        }
+    
+        &__medium-8 {
+            float: left;
+            width: 66.6%;
+        }
+
+        &__medium-8--smaller {
+            width: 63%;
+        }
+    }
+}
