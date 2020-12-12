@@ -7,6 +7,10 @@
         margin-right: -65px;
     }
 
+    &--gutters-small {
+        margin-right: -45px;
+    }
+
     &--gutters-large {
         margin-right: -100px;
     }
@@ -16,8 +20,16 @@
         padding-right: 65px;
     }
 
+    &--gutters-small > div {
+        padding-right: 45px;
+    }
+
     &--gutters-large > div {
         padding-right: 100px;
+    }
+
+    &--t-padding {
+        padding-top: 80px;
     }
 
     &__b-margin-until-medium{
@@ -26,6 +38,7 @@
 
     /* To determine column width 100/12=8.33 then how many widths do want example 8.33x4=33.3%*/
     @mixin atMedium {
+
         &__b-margin-until-medium{
             margin-bottom: 1rem;
         }
@@ -53,4 +66,63 @@
             width: 63%;
         }
     }
+
+    @mixin atLarge {
+
+        &__b-margin-until-large{
+            margin-bottom: 1rem;
+        }
+
+        &__large-4 {
+            float: left;
+            width: 33.3%;
+        }
+
+        &__large-4--larger {
+            width: 37%;
+        }
+
+        &__large-6 {
+            float: left;
+            width: 50%;
+        }
+    
+        &__large-8 {
+            float: left;
+            width: 66.6%;
+        }
+
+        &__large-8--smaller {
+            width: 63%;
+        }
+    }
+
+
+    /* Begin equal-height-at-medium */
+    &--equal-height-at-medium {
+        @mixin atMedium {
+            display: flex;
+        }
+        
+        /* contents of each child div will flex to match tallest element */
+        & > div {
+            float: none;
+            display: flex;
+        }
+    }
+
+
+        /* Begin equal-height-at-large */
+        &--equal-height-at-large {
+            @mixin atLarge {
+                display: flex;
+            }
+            
+            /* contents of each child div will flex to match tallest element */
+            & > div {
+                float: none;
+                display: flex;
+            }
+        }
+
 }
