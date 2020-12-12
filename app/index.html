@@ -49,13 +49,13 @@
       <div class="wrapper wrapper--medium wrapper--b-margin">
         <!--Lesson 30 of Udemy -->
         <!--Only for screens 970px or larger make image 976px, for screens smaller than 970, pic is 100% of viewport width-->
-        <img sizes="(min-width: 970px) 976w, 100vw" srcset="assets/images/first-trip.jpg 565w, assets/images/first-trip.jpg 976w, assets/images/first-trip-hi-dpi 1952w.jpg" alt="Couple walking down a street.">
+        <img sizes="(min-width:970px) 976px, 100vw" srcset="assets/images/first-trip-low-res.jpg 565w, assets/images/first-trip.jpg 976w, assets/images/first-trip-hi-dpi 1952w.jpg" alt="picture">
       </div>
 
       <div class="row row--gutters"> <!-- row class is divided into a 12 column grid -->
         <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
           <picture>
-            <!-- sizes is for pics that are not the full width of browser window-->
+            <!-- sizes is to ensure that pic will not be the full width of browser window-->
             <source sizes="404px" srcset="assets/images/our-start.jpg 404w, assets/images/our-start-hi-dpi.jpg 808w" media="(min-width: 1020px)">
             <source sizes="320px" srcset="assets/images/our-start-portrait.jpg 364w, assets/images/our-start-portrait-hi-dpi.jpg 764w" media="(min-width: 800px)">
             <img srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape.jpg-hi-dpi 1600w" alt="Our founder, Jane Doe">
@@ -159,8 +159,10 @@
     </div>
   </div>
 
-  <footer>
-    <p>Copyright &copy; 2019 Clear View Escapes. All rights reserved. <a href="#" class="btn btn--orange">Get in Touch</a></p>
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p><span class="site-footer__text">Copyright &copy; 2019 Clear View Escapes. All rights reserved.</span> <a href="#" class="btn btn--orange">Get in Touch</a></p>
+    </div>
   </footer>
   <!-- Leave this commented out HTML here until you need it for an upcoming "modal" lesson
   <div class="modal">
