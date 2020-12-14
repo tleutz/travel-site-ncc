@@ -23,6 +23,15 @@
         }
     }
 
+    &--smaller {
+        font-size: .9rem;
+
+        @mixin atSmall {
+            font-size: 1.2rem;
+        }
+    }
+
+
     &--narrow {
         max-width: 500px;
         margin-left:auto;

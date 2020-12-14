@@ -8,6 +8,29 @@ img {
   height: auto;
 }
 
+.img {
+  &--translate-10X {
+    transform: translateX(10%);
+  }
+
+  &--translate-20X {
+    transform: translateX(20%);
+  }
+  
+  &--translate-30X {
+    transform: translateX(30%);
+  }
+
+  &--translate-40X {
+    transform: translateX(40%);
+  }
+
+  &--translate-50X {
+    transform: translateX(50%);
+  }
+
+}
+
 /* Able to add padding to ALL elements without adding to width %s */
 * {
   box-sizing: border-box;

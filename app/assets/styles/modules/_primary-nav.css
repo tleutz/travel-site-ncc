@@ -1,0 +1,54 @@
+.primary-nav {
+    padding-top: 10px;
+
+    @mixin atMedium {
+        padding-top: 0;
+    }
+
+    /* lesson 40 styling header */
+    &--pull-right {
+        @mixin atMedium {
+            float: right;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        @mixin clearfix;
+    }
+
+    li {
+        background-color: rgba($mainBlue, .95);
+        list-style: none;
+        padding-right: 20px;
+        border-bottom: .05rem solid #fff;
+
+        @mixin atMedium {
+            float: left;
+            background-color: rgba($mainBlue, 0);
+            border-bottom: none;
+        }
+    }
+
+    li:last-child {
+        padding-right: 0;
+
+        @mixin atMedium {
+            padding-right: 20px;
+        }
+    }
+
+    a {
+        color: $mainBlue;
+        text-decoration: none;
+        font-weight: 300;
+        display: block;
+        padding: 12px 0;
+        color: #FFF;
+
+        @mixin atMedium {
+            color: $mainBlue;
+        }
+    }
+}

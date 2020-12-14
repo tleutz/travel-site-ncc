@@ -5,6 +5,7 @@ const postCSSPlugins = [
   require('postcss-mixins'),
   require('postcss-simple-vars'),
   require('postcss-nested'),
+  require('postcss-hexrgba'), /* allows variable to be usde in rgba($mainBlue, .3) */
   require('autoprefixer')
 ]
 

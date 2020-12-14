@@ -18,4 +18,25 @@
     }
   }
 
+  &--circle {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    background: $mainOrange;
+    padding: 0;
+
+    @mixin atMedium {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 50%;
+      font-size: 1.3rem;
+    }
+  }
+
 }
