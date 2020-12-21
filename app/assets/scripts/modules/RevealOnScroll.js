@@ -15,13 +15,11 @@ class RevealOnScroll {
     events() {
         window.addEventListener('scroll', this.scrollThrottle)
         window.addEventListener("resize", debounce(() => {
-            console.log("Just Debounce resize")
             this.browserHeight = window.innerHeight
         }, 333))
     }
 
     calcCaller() {
-        console.log("Scroll function ran")
         this.itemsToReveal.forEach(el => {
             if (el.isRevealed == false) {
                 this.calculateIfScrolledTo(el)

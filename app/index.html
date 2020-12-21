@@ -24,9 +24,13 @@
         </div>
           <nav class="primary-nav primary-nav--pull-right" >
             <ul>
-              <li><a href="#our-beginning">WHAT'S IN THE BOX</a></li>
-              <li><a href="#set-top-at-a-glance">SET-TOP BOX AT A GLANCE</a></li>
-              <li><a href="#testimonials">REMOTE CONTROL FUNCTIONALITY</a></li>
+              <li><a href="#whats-in-the-box" id="whats-in-the-box">WHAT'S IN THE BOX</a></li>
+              <li><a href="#set-top-at-a-glance" id="set-top-at-a-glance">SET-TOP BOX AT A GLANCE</a></li>
+              <li><a href="#remote-control-functionality" id="remote-control-functionality">REMOTE CONTROL FUNCTIONALITY</a></li>
+              <li><a href="#whats-in-the-box" id="whats-in-the-box">Our Beginning</a></li>
+              <li><a href="#our-features" id="our-features">Our Features</a></li>
+              <li><a href="#testimonials" id="testimonials">TESTIMONIALS</a></li>
+
             </ul>
           </nav>
       </div>
@@ -53,7 +57,8 @@
     </div>
   </div>
 
-<div id="whats-in-the-box" class="page-section page-section--border-bottom">
+  <!--  use data  "data-then-whatever-you-want="#some-id-here"" -->
+<div id="whats-in-the-box" class="page-section page-section--border-bottom" data-matching-link="#whats-in-the-box">
   <div class="wrapper">
     <h2 class="headline headline--centered headline--b-margin-small">WHAT’S IN THE BOX?</h2>
     <div class="row row--gutters row--gutters-large">
@@ -87,7 +92,7 @@
   </div>
 </div>
 
-<div id="set-top-at-a-glance" class="page-section page-section--border-bottom">
+<div id="set-top-at-a-glance" class="page-section page-section--border-bottom" data-matching-link="#set-top-at-a-glance">
   <div class="wrapper wrapper--t-margin">
     <h2 class="headline headline--centered headline--b-margin-small">SET-TOP BOX AT A GLANCE</h2>
     <div class="row row--gutters row--gutters-large">
@@ -141,9 +146,9 @@
 </div>
 
 
-  <div id="our-beginning" class="page-section"> <!-- top and bottom padding and max-width:1200px centered -->
+  <div id="our-beginning" class="page-section" data-matching-link="#our-beginning"> <!-- top and bottom padding and max-width:1200px centered -->
     <div class="wrapper">
-      <h2 class="headline headline--centered headline--b-margin-small">WHAT’S IN THE BOX?</h2>
+      <h2 class="headline headline--centered headline--b-margin-small">Our Beginning</h2>
       <h3 class="headline headline--centered headline--orange headline--small headline--narrow headline--light headline--b-margin-large">Ever since, we&rsquo;ve been working to make travel better for everyone.</h3>
       
       <div class="wrapper wrapper--medium wrapper--b-margin">
@@ -174,7 +179,7 @@
     </div>
   </div>
 
-  <div id="features" class="page-section page-section--blue">
+  <div id="features" class="page-section page-section--blue" data-matching-link="#features">
     <div class="wrapper">
       <h2 class="section-title"><img class="section-title__icon" src="assets/images/icons/star.svg"> Our <strong>Features</strong></h2>
     
@@ -215,7 +220,7 @@
     </div>
   </div>
 
-  <div id="testimonials" class="page-section page-section--testimonials page-section--no-b-padding-until-large">
+  <div id="testimonials" class="page-section page-section--testimonials page-section--no-b-padding-until-large" data-matching-link="#testimonials">
     <div class="wrapper wrapper--no-padding-until-large">
       <h2 class="section-title section-title--blue"><img class="section-title__icon" src="assets/images/icons/comment.svg">
         Real <strong>Testimonials</strong></h2>
