@@ -2,6 +2,7 @@ import '../styles/styles.css'
 import MobileMenu from './modules/MobileMenu'
 import RevealOnScroll from'./modules/RevealOnScroll'
 import StickyHeader from './modules/StickyHeader'
+import 'lazysizes'
 
 new StickyHeader()
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75)
