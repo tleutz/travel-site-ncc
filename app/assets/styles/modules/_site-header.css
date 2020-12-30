@@ -11,14 +11,16 @@
         background-color: rgba($mainBlue, .3)
     }
     
+
     @mixin atMedium {
-        background-color: rgba($mainBlue, .3);
+        background-color: transparent;
         
 
         &--dark {
-            background-color: rgba(23, 51, 72, .95);
+            background-color: rgba(255, 255, 255 .95);
         }
     }
+
 
     &__btn-container {
         @mixin atMedium {
@@ -93,9 +95,11 @@
             transition: all .3s ease-out;
         }
 
+        /* add back to remove hamburger on large screens
         @mixin atMedium {
             display: none;
         }
+        */
     }
 
     &__menu-icon--close-x {
@@ -124,12 +128,14 @@
         padding-top: 90px;
         text-align: center;
 
+        /* add back to display nav links
        @mixin atMedium {
           opacity: 1;
           padding-top: 0;
           z-index: 1;
           transform: scale(1);
        }
+       */
 
        &--is-visible {
         opacity: 1;
