@@ -29,6 +29,7 @@
     text-align: center;
     background: $mainOrange;
     padding: 0;
+    float: left;
 
     @mixin atMedium {
       width: 30px;

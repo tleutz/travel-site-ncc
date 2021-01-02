@@ -1,4 +1,11 @@
 .generic-content-container {
+    &--p-l-60 {
+        padding-left: 60px;
+
+        @mixin atMedium {
+            padding-left: 80px;
+        }
+    }
 
     p {
         font-weight: 300;
@@ -13,6 +20,10 @@
 
     p a {
         font-weight: 700;
+    }
+
+    p.m-left-40 {
+        margin-left: 40px;
     }
 
 }
